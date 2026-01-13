@@ -1,6 +1,10 @@
 # Semantic Book Recommender 
+A Semantic book recommender that recommends books based on description, category and sentiment. 
 
-Semantic book recommender uses query from users to provide recommendations on books based on categories and feeling. 
+<img width="1440" height="554" alt="Screenshot 2026-01-12 at 8 09 34 PM" src="https://github.com/user-attachments/assets/b591392a-7894-4e89-9584-a7cb81ce6bf5" />
+<img width="1440" height="521" alt="Screenshot 2026-01-13 at 7 47 16 AM" src="https://github.com/user-attachments/assets/e9f498b6-9399-4a06-93cd-a8e1dbaaa6fd" />
+<img width="1437" height="667" alt="Screenshot 2026-01-13 at 7 49 21 AM" src="https://github.com/user-attachments/assets/49ebe9b8-3e66-478b-a054-ef0d94b558e3" />
+
 
 # Dataset
 
