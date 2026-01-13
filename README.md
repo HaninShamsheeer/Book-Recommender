@@ -1,12 +1,12 @@
+# Dataset
 
+A kaggle dataset with 7k books by Dylan Castillo was used to build this semantic book recommender.
 
-**Data Exploration**
-
-**Dataset:**
-
-A kaggle dataset with 7k books by Dylan Castillo (link) was used to build this semantic book recommender.
+(link: <url>https://www.kaggle.com/datasets/dylanjcastillo/7k-books-with-metadata</url>) 
 
 The dataset has columns such as isbn13, isbn10, title, subtitle, authors, categories, thumbnail, description, published_year, average_rating, num_pages and ratings_count
+
+# Data Exploration
 
 **Data Exploration Process:**
 * Missing values of all the columns were analyzed using a heatmap in order to check whether there were any patterns on why such values were missing.
@@ -22,9 +22,10 @@ The dataset has columns such as isbn13, isbn10, title, subtitle, authors, catego
 
 Since there existed no patterns between books with missing values, they were removed. Descriptions shorter than 24 words were removed. New column "tagged_description" was created and columns not in use were dropped.
 
-**Libraries used:** pandas, matplotlib, seaborn, numpy 
+**Libraries used:** pandas, matplotlib, seaborn, numpy
 
-**Vector Search** 
+
+# Vector Search
 
 **Vector Search Process** 
 
@@ -35,7 +36,7 @@ Since there existed no patterns between books with missing values, they were rem
 
 **Packages used:** langchain-community, langchain-text-splitters, langchain-openai, langchain-chroma 
 
-**Text Classification**
+# Text Classification
 
 Used HuggingFace's zero-shot classifier in order to classify books with no simple_categories into one of the 4 categories.
 
@@ -49,7 +50,7 @@ Used HuggingFace's zero-shot classifier in order to classify books with no simpl
 * This was then merged to the existing dataframe and the predicted categories replaced simple categories with no values
 * The predicted categories column was then dropped 
 
-**Sentiment Analysis**
+# Sentiment Analysis
 
 Used HuggingFace transformer to use the fine tuned LLM model to assign a sentiment (out of 7) to a book based on its description
 
@@ -59,7 +60,7 @@ Used HuggingFace transformer to use the fine tuned LLM model to assign a sentime
 * Created a dataframe with the scores of all the emotions
 * Merged into the original books dataframe
 
-**Gradio Dashboard** 
+# Gradio Dashboard 
 
 A dashboard was created for the books with an option to enter a query/ description, select a categpry, and select an emotional tone. This would generate 16 book recommendations with thumbnails (generic not found cover if no thumbnail)
 
